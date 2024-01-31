@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <p>Nithing here<br> Open console</p>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS Game</title>
+</head>
+<body>
 
-        <script src="script.js" async defer></script>
-    </body>
+    <button onclick="startGame()" class="startButton">Start Game</button>
+
+    <div class="container" style="display: none;">
+        <button class="btn" onclick="getPlayerChoice('rock')">ROCK</button>
+        <button class="btn" onclick="getPlayerChoice('paper')">PAPER</button>
+        <button class="btn" onclick="getPlayerChoice('scissors')">SCISSORS</button>
+    </div>
+
+    <div class="results"></div>
+
+    <script src="script.js" async defer></script>
+</body>
 </html>
